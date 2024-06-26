@@ -1,0 +1,95 @@
+* {
+  user-select: none;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: auto 3fr auto;
+  grid-template-areas:
+      "left-sidebar main-content right-sidebar"
+      "bottom-console bottom-console bottom-console";
+  height: 100vh;  /* Full viewport height */
+  width: 100vw;   /* Full viewport width */
+}
+
+.left-sidebar {
+  grid-area: left-sidebar;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  border-right: 2px solid green;
+  position: relative;
+  min-width: 100px;  /* Minimum size for the left sidebar */
+  max-width: 500px;  /* Maximum size for the left sidebar */
+}
+
+.right-sidebar {
+  grid-area: right-sidebar;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  border-left: 2px solid green;
+  position: relative;
+  min-width: 100px;  /* Minimum size for the right sidebar */
+  max-width: 500px;  /* Maximum size for the right sidebar */
+}
+
+.main-content {
+  grid-area: main-content;
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  border-left: 2px solid green;
+  border-right: 2px solid green;
+}
+
+.bottom-console {
+  grid-area: bottom-console;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  border-top: 2px solid green;
+  position: relative;
+  min-height: 100px;
+  max-height: 500px;
+}
+
+.handle {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  cursor: ew-resize;
+  z-index: 1;
+}
+.horizontal-handle {
+  position: absolute;
+  top: 0;
+  height: 10px;
+  width: 100%;
+  cursor: ns-resize;
+  z-index: 1;
+}
+
+.left-sidebar .handle {
+  right: -5px;
+}
+.right-sidebar .handle {
+  left: -5px;
+}
+.bottom-console .handle {
+  top: -5px;
+}
