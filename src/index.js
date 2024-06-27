@@ -51,9 +51,7 @@ const menuTemplate = [
         submenu: [
           { label: 'Distributable'},
           { label: 'Installer'},
-          { label: 'Build Settings', submenu: [
-            { label: 'lol'}
-          ]}
+          { label: 'Build Settings' }
         ]
       },
     ]
