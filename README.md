@@ -8,8 +8,8 @@ DEngine uses a variety of external applications to achieve an easy, fast, and sa
 
 We're combining the functions of Python and the Discord API implementation in Discord.py.
 
-When you create your project, you will have your functions on the left sidebar. This is what is being compiled by our program.
-When you press [ctrl + s], your progress will be saved to "{project_name}.sv".
+When you create your project, you will have your functions on the left sidebar. This is what is being compiled by our program.\n
+When you press [ctrl + s], your progress will be saved to "{project_name}.sv".\n
 When you select: Build -> App, "{project_name}.sv", is converted into "{project_name}.py".
 When you select: Build -> Executable, "{project_name}.py", is converted into "{project_name}.exe".
 When you select: Build -> Installer, Your entire build gets converted into: "{project_name}_installer.exe".
