@@ -9,6 +9,7 @@ DEngine uses a variety of external applications to achieve an easy, fast, and sa
 
 We're combining the functions of Python and the Discord API implementation in Discord.py.
 
+---
 1. When you create your project, you will have your functions on the left sidebar. This is what is being compiled by our program.
 
 2. When you press [ctrl + s], your progress will be saved to "{project_name}.sv".
