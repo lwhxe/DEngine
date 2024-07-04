@@ -22,6 +22,7 @@ We're combining the functions of Python and the Discord API implementation in Di
 
 Previous steps will be done automatically. I.E. Build -> Installer, will complete all previous steps (including saving) before creating the Installer.
 
+---
 **Electron is used for the UI.**
 **C Language is used for the saving and first conversion processes.**
 **Pyinstaller is used to create the executable.**
